@@ -133,7 +133,7 @@ for D1 in np.arange(0.01,1,0.01):
   for i  in range(1,len(HGLLoss)):
      HLtot.append(HGLLoss[i-1]+HGLLoss[i])
 
-#Initil guess of the Reynolds Number
+#Initial guess of the Reynolds Number
   Re1 = 1E5
   Re2 = 1E5
 
@@ -180,11 +180,11 @@ for i in range(0,len(Diam)):
     Pmaxbar = Pmaxhead*0.0981
     print('Max pressure in pipe',i,'=',Pmaxbar)
 
-#Now to use stupid monkey brain 
-#Be on the conservative side and give us some pipes that easily 
+#Now to manually edit code 
+#Be on the conservative side and provide pipe specs that easily 
 #fill ratio requirement and also withstand the pressure
-#And you'll have to do the kg/m because THERE'S NO GODDAMN EQ
-#EQUATION WHICH GIVES WEIGHT FROM DIAMETER AND RATING GODDAMN
+#From commonly used pipes from some handbooks
+#Need to also do kg/m manually, no equation given to calculate it
 
 D1 = 0.450
 PRating1 = 2.5
@@ -227,12 +227,3 @@ TCO24 = TA4*4.18
 TotalCO2 = CO21+CO22+CO23+CO24+TCO21+TCO22+TCO23+TCO24
 print('Total CO2 produced in kg =',TotalCO2)
 print('')
- 
-
-
-
-
-
-
-
-
