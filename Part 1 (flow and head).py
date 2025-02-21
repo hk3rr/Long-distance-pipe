@@ -50,7 +50,7 @@ def darcyandbalancegivingV(g,HLtot,lamb1,lamb2,L1,L2,A1,A2):
 def Reeq(rho,V,D,mu):
     return (rho*V*D)/mu
 
-#Initil guess of the Reynolds Number
+#Initial guess of the Reynolds Number
 Re1 = 1E5
 Re2 = 1E5
 
@@ -82,7 +82,3 @@ print('Q1 =',Q1)
 print('Q2 =',Q2)
 
 print('Flow in Litres/s',L1)
-
-
-
-
