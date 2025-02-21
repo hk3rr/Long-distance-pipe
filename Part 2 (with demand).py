@@ -70,7 +70,7 @@ LQD = 1.1
 
 QD = LQD / 1000
 
-#Initil guess of the Reynolds Number
+#Initial guess of the Reynolds Number
 Re1 = 1E5
 Re2 = 1E5
 
